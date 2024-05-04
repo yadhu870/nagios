@@ -1,8 +1,8 @@
  # shellcheck disable=SC1114
  #!/bin/bash
      cd ~
-     apt-get update
-     apt-get upgrade
+     apt-get update -y
+     apt-get upgrade -y
      sudo apt install wget unzip curl openssl build-essential libgd-dev libssl-dev libapache2-mod-php php-gd php apache2 -y
      wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
      sudo tar -zxvf nagios-4.4.6.tar.gz
